@@ -98,7 +98,7 @@
     height: 30px;
     width: 100px;
     font-size: 18px;
-    color: white;
+    color: rgb(238, 105, 105);
     cursor: pointer;
 }
 .clear-cart-button:hover {
