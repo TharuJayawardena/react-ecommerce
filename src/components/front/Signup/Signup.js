@@ -7,8 +7,10 @@ const validationSchema = Yup.object({
   name: Yup.string().when('action', {
     is: 'Sign Up',
     then: Yup.string()
-      .required('Name is required')
+      .required('Name is required'),
   }),
+ 
+
   email: Yup.string()
     .email('Enter a valid email address')
     .required('Email is required'),
