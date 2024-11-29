@@ -106,17 +106,14 @@
   font-weight: 700;
   cursor: pointer;
  }
- .submitForm{
+ .submit-button{
   flex-direction: column;
-  /* margin-top: 50px; */
   margin: auto;
   width: 480px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%;
-  height: 59px; */
   color: #fff;
   background: #4c00b4;
   border-radius: 50px;
@@ -132,4 +129,26 @@
   color: red;
   font-size: 0.9em;
   margin-top: 5px;
+}
+.field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
