@@ -137,18 +137,7 @@
   border: 1px solid #ccc;
 }
 
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
 .submit-button:disabled {
   background-color: #ccc;
 }
 
-.submit-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
