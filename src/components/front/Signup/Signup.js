@@ -5,8 +5,9 @@ import './Signup.css';
 
 const validationSchema = Yup.object({
   name: Yup.string().when('action', {
-    is: 'Sign Up', 
-    then: Yup.string().required('Name is required')
+    is: 'Sign Up',
+    then: Yup.string()
+      .required('Name is required')
   }),
   email: Yup.string()
     .email('Enter a valid email address')
@@ -16,10 +17,12 @@ const validationSchema = Yup.object({
     .required('Password is required'),
 });
 
-const Signup = () => {
+const Signup = () =>
+{
   const [action, setAction] = useState('Sign Up');
 
-  const handleSubmit = (values) => {
+  const handleSubmit = (values) =>
+  {
     alert(`${action} successful!`);
     setAction('Sign Up');
   };
@@ -79,21 +82,21 @@ const Signup = () => {
               </div>
             )}
 
-<div className="submit-container">
-         <div
-           className={`submit ${action === "Login" ? "gray" : ""}`}
-          onClick={() => setAction("Sign Up")}
-         >
-           Sign Up
-         </div>
-         <div
-           className={`submit ${action === "Sign Up" ? "gray" : ""}`}
-           onClick={() => setAction("Login")}
-         >
-           Login
-         </div>
-       </div>
-       
+            <div className="submit-container">
+              <div
+                className={`submit ${action === "Login" ? "gray" : ""}`}
+                onClick={() => setAction("Sign Up")}
+              >
+                Sign Up
+              </div>
+              <div
+                className={`submit ${action === "Sign Up" ? "gray" : ""}`}
+                onClick={() => setAction("Login")}
+              >
+                Login
+              </div>
+            </div>
+
             <div>
               <button type="submit" className="submit-button">
                 Submit
