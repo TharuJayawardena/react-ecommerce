@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Cart.css";
 
+
 const Cart = ({ cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance }) => {
    
   const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0);

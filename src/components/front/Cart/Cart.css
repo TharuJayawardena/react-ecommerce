@@ -1,7 +1,7 @@
 .cart-items{
     margin: 30px auto;
     width: 50%;
-    background-color: orange;
+    background-color: rgb(217, 122, 44);
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -102,5 +102,5 @@
     cursor: pointer;
 }
 .clear-cart-button:hover {
-   background-color: #0e557e;
+   background-color: #b3d8ee;
 }

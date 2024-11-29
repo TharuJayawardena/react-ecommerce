@@ -1,4 +1,4 @@
-import Reac,{useState} from 'react';
+import React,{useState} from 'react';
 import "./Signup.css";
 
 // import key from '././image/download9.jpg'

@@ -4,13 +4,13 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: orange;
+    background-color: rgb(217, 122, 44);
     border-radius: 5px;
 }
 
 .card{
     width: 300px;
-    height: 400px;
+    height: 450px;
     border: 1px solid black;
     border-radius: 5px;
     overflow: hidden;
@@ -34,8 +34,15 @@
 .product-price{
     margin: 10px 0px;
     padding-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
+}
+.product-description{
+    text-transform: lowercase;
+    font-weight: 100;
+    font-style: normal;
+    font-family: sans-serif;
+    font-size: 15px;
 }
 .product-add-button {
     font-weight: 700;
@@ -59,3 +66,19 @@
 .product-add-button:active{
     transform: translateY(2px);
 }
+.search-input {
+    padding: 10px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
