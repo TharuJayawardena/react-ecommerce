@@ -45,7 +45,7 @@ const Products = ({ productItems, handleAddProduct }) =>
                                 </h3>
                             </div>
                             <div className="product-price">
-                                ${productItem.price}
+                                Rs. {productItem.price}
                             </div>
                             <div>
                                 <button className='product-add-button' onClick={() => handleAddProduct(productItem)}>Add to Cart</button>
